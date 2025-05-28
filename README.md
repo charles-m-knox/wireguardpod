@@ -33,7 +33,7 @@ net.ipv4.conf.all.src_valid_mark=1
 To apply the new sysctl values immediately, run `sysctl -p
 /etc/sysctl.d/11-wireguard.conf` as root.
 
-> [!INFO]
+> [!NOTE]
 >
 > You can change the name of `11-wireguard.conf` as desired, so long as other
 > files don't take precedence based on alphabetical naming conventions in
@@ -84,7 +84,7 @@ Restart=always
 WantedBy=default.target
 ```
 
-> [!INFO]
+> [!NOTE]
 >
 > You can change the directory `%h/.config/wireguardpod` above to a different
 > directory, so long as your rootless podman container will have access to read
